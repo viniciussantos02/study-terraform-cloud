@@ -31,7 +31,7 @@ variable "remote_backend" {
     s3_bucket_name               = "study-vini-remote-backend-bucket"
     dynamodb_table_name          = "study-vini-state-locking-table"
     dynamodb_table_billing_mode  = "PAY_PER_REQUEST"
-    dynamodb_table_hash_key      = "LockId"
+    dynamodb_table_hash_key      = "LockID"
     dynamodb_table_hash_key_type = "S"
   }
 }
