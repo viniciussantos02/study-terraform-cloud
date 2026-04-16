@@ -1,0 +1,35 @@
+# Diretório de dependências/plugins
+.terraform/
+
+# Arquivos de state (NUNCA versionar)
+*.tfstate
+*.tfstate.*
+
+# Arquivos de crash (debug)
+crash.log
+
+# Variáveis sensíveis
+*.tfvars
+*.tfvars.json
+
+# Arquivos de override (geralmente locais)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Plano gerado (pode conter dados sensíveis)
+*.tfplan
+
+# Lock file (⚠️ decidir se versiona ou não)
+.terraform.lock.hcl
+
+# Arquivos de configuração local
+terraform.rc
+.terraformrc
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
